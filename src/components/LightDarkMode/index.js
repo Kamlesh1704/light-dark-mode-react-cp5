@@ -8,7 +8,8 @@ class LighDarkMode extends Component {
     bgClass: 'dark',
     buttonClass: 'buttonLight',
   }
-  onclicking() {
+  onclicking = () => {
+    const {mode} = this.state
     if (mode === 'Light Mode') {
       return this.setState(prev => ({
         mode: (prev.mode = 'Dark Mode'),
